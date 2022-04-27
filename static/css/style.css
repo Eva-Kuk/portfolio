@@ -158,6 +158,287 @@ header {
   height: auto;
 }
 
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3.5rem 0 5rem 0;
+}
+.about-container .skill-container .skill-title {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  padding-top: 0.5rem;
+}
+.about-container .skill-container .skill-text {
+  margin-bottom: 1rem;
+  color: var(--grey-1);
+  font-size: 1.2rem;
+}
+.about-container .right-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.about-container .right-about .about-item {
+  border: 1px solid var(--grey-5);
+  border-radius: 5px;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.about-container .right-about .about-item:hover {
+  cursor: default;
+  transform: translateY(-3px);
+  border: 1px solid var(--secondary);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+.about-container .right-about .about-item .abt-text {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.about-container .right-about .about-item .abt-text .large-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--secondary);
+  margin-bottom: 0.3rem;
+}
+.about-container .right-about .about-item .abt-text .small-text {
+  padding-left: 3rem;
+  position: relative;
+  font-size: 1.2rem;
+  color: var(--grey-1);
+  letter-spacing: 2px;
+}
+.about-container .right-about .about-item .abt-text .small-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15px;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--grey-5);
+}
+.about-container .left-about {
+  padding-right: 2rem;
+  padding-top: 3rem;
+}
+.about-container .left-about p {
+  line-height: 2rem;
+  padding: 1rem;
+  color: var(--grey-1);
+}
+.about-container .left-about h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.about-stats {
+  padding-bottom: 4rem;
+}
+.about-stats .progress-bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+.about-stats .progress-bars .progress-bar {
+  display: flex;
+  flex-direction: column;
+}
+.about-stats .progress-bars .progress-bar .prog-title {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.about-stats .progress-bars .progress-bar .progress-con {
+  display: flex;
+  align-items: center;
+}
+.about-stats .progress-bars .progress-bar .progress-con .prog-text {
+  color: var(--grey-2);
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress {
+  width: 100%;
+  height: 0.45rem;
+  background-color: var(--grey-4);
+  margin-left: 1rem;
+  position: relative;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: var(--secondary);
+  transition: all 0.4s ease-in-out;
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .html {
+  width: 85%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .css {
+  width: 80%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .javascript {
+  width: 60%;
+}
+.about-stats .progress-bars .progress-bar .progress-con .progress .python {
+  width: 70%;
+}
+
+.stat-title {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 3.5rem 0;
+  position: relative;
+}
+.stat-title::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 40%;
+  height: 1px;
+  background-color: var(--grey-5);
+  transform: translateX(-50%);
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  background: var(--secondary);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+.timeline .container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+.timeline .container::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 10px);
+  right: -10px;
+  background: var(--primary);
+  border: 2px solid var(--secondary);
+  border-radius: 16px;
+  z-index: 1;
+}
+.timeline .container::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: var(--secondary);
+  z-index: 1;
+}
+.timeline .container .content {
+  padding: 30px 90px 30px 30px;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+  border: 1px solid var(--grey-5);
+  transition: all 0.4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+.timeline .container .content:hover {
+  cursor: default;
+  transform: translateY(-3px);
+  border: 1px solid var(--secondary);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+}
+.timeline .container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--white);
+}
+.timeline .container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--white);
+}
+.timeline .container .content .date-mobile {
+  display: none;
+}
+.timeline .container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  border: 2px solid var(--secondary);
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: var(--secondary);
+  z-index: 1;
+}
+.timeline .container .icon-cap {
+  color: var(--pink);
+  border: 2px solid var(--pink);
+}
+.timeline .container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left {
+  left: 0;
+}
+.container.left .icon {
+  right: 56px;
+}
+.container.left .date {
+  right: -182px;
+}
+
+.container.right {
+  left: 50%;
+}
+.container.right:after {
+  left: -10px;
+}
+.container.right::before {
+  left: 8px;
+}
+.container.right .icon {
+  left: 56px;
+}
+.container.right .date {
+  left: -188px;
+}
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
 footer {
   width: 100%;
   position: fixed;
@@ -248,4 +529,18 @@ footer {
   background-color: var(--secondary);
   transform: translateX(0);
   transition: all 0.4s ease-out;
+}
+
+.main-title {
+  text-align: center;
+}
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.main-title h2 span {
+  color: var(--secondary);
 }/*# sourceMappingURL=style.css.map */
