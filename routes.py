@@ -11,6 +11,11 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+
 # Set how & where to run the app
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
