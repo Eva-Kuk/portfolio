@@ -20,9 +20,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='favicon/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="16x16" href="{{url_for('static', filename='favicon/favicon-16x16.png')}}">
 
+    {% block styles %}
+    {% endblock %}
+
     <title>Ewa Kukla | Portfolio | Full Stack Web Developer</title>    
   </head>
-  <body>
+  <body class="main-content">
     <!-- Main content -->   
     <main>      
         {% block content %}
@@ -30,20 +33,25 @@
     </main>
 
        <!-- Navigation buttons -->
-       <div class="icon-bar">
-        <div class="nav-icon  control-1 active-btn" title="Home" aria-label="Home Link" data-id="home">
-          <a href="{{ url_for('home') }}"><i class="fas fa-home"></i></a>
-        </div>
-        <div class="nav-icon control-2 " title="About Me" aria-label="About Me Link" data-id="about">
-          <a href="{{ url_for('about') }}"><i class="fas fa-user"></i></a>
-        </div>
-        <div class="nav-icon control-3" title="Projects" aria-label="Projects Link" data-id="projects">
-          <a href="{{ url_for('projects') }}"><i class="fas fa-briefcase"></i></a>
-        </div>
-        <div class="nav-icon control-5" title="Contact" aria-label="Contact Link" data-id="contact">
-          <a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i></a>
-        </div>
-      </div>
+       <nav class="navbar">
+          <ul class="icon-bar">
+            <li class="nav-icon  control-1" title="Home" aria-label="Home Link" data-id="home">
+              <a href="{{ url_for('home') }}"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-icon control-2 " title="About Me" aria-label="About Me Link" data-id="about">
+              <a href="{{ url_for('about') }}"><i class="fas fa-user"></i></a>
+            </li>
+            <li class="nav-icon control-3" title="Projects" aria-label="Projects Link" data-id="projects">
+              <a href="{{ url_for('projects') }}"><i class="fas fa-briefcase"></i></a>
+            </li>
+            <li class="nav-icon control-4" title="Contact" aria-label="Contact Link" data-id="contact">
+              <a href="{{ url_for('contact') }}"><i class="fas fa-envelope"></i></a>
+            </li>
+          </ul>
+       </nav>
+
+
+
       <!-- Dark & Light theme buttons -->
       <div class="theme-btn" title="Dark Light Mode" aria-label="Dark Light Mode">
           <i class="fas fa-adjust"></i>
@@ -63,7 +71,11 @@
           </div>
       </div>
     </footer>
+    
     <!-- Custom script -->
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script> 
+    {% block scripts %}
+    {% endblock %}
+
   </body>
 </html>
