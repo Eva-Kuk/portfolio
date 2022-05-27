@@ -58,6 +58,9 @@ header {
 section {
     padding: 3rem 18rem;
 }
+.section1 {
+    padding: 0rem 0rem;
+}
 
 // Navigation buttons
 .icon-bar {
@@ -467,6 +470,7 @@ ul li a.active {
 .project-card {
     display: flex;
     flex-direction: column;
+    min-height: 320px;
     margin: 4rem auto;
     border: 1px solid var(--grey-5);
     transition: all .4s ease-in-out;
@@ -504,6 +508,11 @@ ul li a.active {
         transition: transform .2s;
         &:hover {
             filter: grayscale(0);
+        }
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }
     }
     .description {
@@ -624,6 +633,9 @@ ul li a.active {
             height: auto;
         }
         .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
             flex-basis: 45%;
             &:before {
                 transform: skewX(-4deg);
@@ -652,7 +664,7 @@ ul li a.active {
         .image {
             background-size: cover;
             background-position: center center;
-        }
+    }
         .margin-bottom {
             margin-bottom: 4rem;
         }

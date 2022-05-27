@@ -58,6 +58,10 @@ section {
   padding: 3rem 18rem;
 }
 
+.section1 {
+  padding: 0rem 0rem;
+}
+
 .icon-bar {
   flex-direction: column;
   align-items: center;
@@ -461,6 +465,7 @@ ul li a.active i {
 .project-card {
   display: flex;
   flex-direction: column;
+  min-height: 320px;
   margin: 4rem auto;
   border: 1px solid var(--grey-5);
   transition: all 0.4s ease-in-out;
@@ -500,6 +505,12 @@ ul li a.active i {
 }
 .project-card .image:hover {
   filter: grayscale(0);
+}
+.project-card .image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 .project-card .description {
   padding: 1rem;
@@ -607,6 +618,9 @@ ul li a.active i {
     height: auto;
   }
   .project-card .description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     flex-basis: 45%;
   }
   .project-card .description:before {
@@ -1196,6 +1210,10 @@ footer {
 @media screen and (max-width: 1432px) {
   .section {
     padding: 7rem 11rem;
+  }
+
+  .section1 {
+    padding: 0rem 0rem;
   }
 
   .contact-content-con {
