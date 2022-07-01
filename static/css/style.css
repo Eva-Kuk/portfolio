@@ -654,6 +654,7 @@ ul li a.active i {
 .contact-content-con {
   display: flex;
   padding-top: 3.5rem;
+  /*padding-bottom: 3.5rem;*/
 }
 .contact-content-con .left-content {
   flex: 3;
@@ -710,6 +711,7 @@ ul li a.active i {
   letter-spacing: 1px;
   align-items: center;
   width: 10rem;
+  margin-bottom: 1rem;
 }
 .contact-content-con .left-content form input#submit:hover {
   cursor: pointer;
@@ -732,6 +734,7 @@ ul li a.active i {
   margin-top: 3rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 footer {

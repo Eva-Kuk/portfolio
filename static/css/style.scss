@@ -675,6 +675,7 @@ ul li a.active {
 .contact-content-con {
     display: flex;
     padding-top: 3.5rem;
+    /*padding-bottom: 3.5rem;*/
     .left-content {
         flex: 3;
         h4 {
@@ -729,6 +730,7 @@ ul li a.active {
             letter-spacing: 1px;
             align-items: center;
             width: 10rem;
+            margin-bottom:1rem;
             &:hover {
                 cursor: pointer;
                 transition: all .4s ease-out;
@@ -753,6 +755,7 @@ ul li a.active {
         margin-top: 3rem;
         display: flex;
         align-items: center;
+        justify-content: center;
         }  
 }
 
