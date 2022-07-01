@@ -719,9 +719,12 @@ ul li a.active i {
   color: var(--primary);
 }
 .contact-content-con .left-content .flash {
-  background-color: #FBB0B0;
-  padding: 10px;
-  width: 400px;
+  background-color: rgba(25, 199, 207, 0.7411764706);
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0.5rem;
+  margin: 0.5rem 0 0.5rem 0;
+  letter-spacing: 1px;
 }
 .contact-content-con .right-content {
   flex: 2;
