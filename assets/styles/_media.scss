@@ -1,11 +1,9 @@
-.about-container .left-about p {
+/*.about-container .left-about p {
     padding-left: 0;
-}
+}*/
 
 @media screen and (max-width: 420px) {
-    .section2 {
-        padding: 2.5rem 2rem !important;
-    }
+
     .timeline {
         &::after {
             content: '';
@@ -42,7 +40,6 @@
                 left: 20px !important;
             }
             .content {
-                padding: 15px 5px 15px 35px !important;
                 h2 {
                     margin: 0 0 10px 0;
                     font-size: 16px;
@@ -89,10 +86,16 @@
         }
         .left-about {
             padding-right: 0;
+            font-size: 1rem;
         }
     }
     .timeline {
         grid-template-columns: repeat(1, 1fr);
+        .container.left .content,
+        .container.right .content {
+            padding: 25px;
+            border-radius: 0px 40px 0 40px;
+        }
     }
     .theme-btn {
         width: 50px;
@@ -124,18 +127,14 @@
         }
     }
     .section {
-        padding: 3rem 1rem !important;
+        padding: 3rem 2rem !important;
         margin-top: 6rem !important;
     }
     .section1 {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-    .about-stats {
-        .progress-bars {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
+
     .projects {
         grid-template-columns: repeat(1, 1fr);
         margin-top: 1rem;
@@ -183,6 +182,9 @@
 @media screen and (max-width:700px) {
     .section {
         padding: 7rem 3rem;
+    }
+    .section2 {
+        padding: 2.5rem 2rem  !important;
     }
     .about-stats .progress-bars {
         grid-template-columns: repeat(1, 1fr);
@@ -279,7 +281,9 @@
     .section3 {
         margin-bottom: 5rem !important;
     }
-    .section2,
+    .section2 {
+        padding: 2.5rem 5rem;
+    }
     .section3,
     .section4 {
         padding: 0.5rem 2rem !important;
@@ -327,7 +331,6 @@
             .name {
                 font-size: 1.2rem !important;
                 font-weight: 400;
-                /*padding-top: 1rem;*/
                 padding-bottom: 0.2rem;
                 span {
                     font-size: 2.5rem !important;
@@ -368,8 +371,6 @@
     .container.left .date,
     .container.right .date {
         display: none;
-        /*right: auto;
-        left: 15px;*/
     }
     .container.left .date-mobile,
     .container.right .date-mobile {
