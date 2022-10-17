@@ -1076,7 +1076,7 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
   .about-container .right-about {
-    padding-top: 2.5rem;
+    padding-top: 1em;
   }
   .about-container .left-about {
     padding: 0;
