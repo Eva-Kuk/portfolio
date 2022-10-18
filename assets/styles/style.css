@@ -919,7 +919,7 @@ footer {
   .timeline .container .icon {
     width: 37px;
     height: 37px;
-    padding: 5x 0 !important;
+    padding: 5px 0 !important;
     top: calc(50% - 19px);
     font-size: 16px;
     left: -17px !important;
