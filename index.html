@@ -20,15 +20,26 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
+      <!-- Email.js -->
+
+
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+      <script>
+          (function () {
+              emailjs.init("WFMUe0supoDi3EK6e");
+          })();
+      </script>
+
     <title>Eva Kukla | Portfolio | Full Stack Web Developer</title>
 </head>
 
 <body class="main-content">
+    <!--  Home Page -->
     <header class="section section1 header active" id="home">
         <div class="header-content">
             <div class="left-header">
                 <div class="h-shape"></div>
-                <div class="image">
+                <div class="image hover">
                     <img src="assets/img/hero.png" alt="my image">
                 </div>
             </div>
@@ -63,7 +74,11 @@
             </div>
         </div>
     </header>
+    <!-- end Home Page -->
+
+    
     <main>
+        <!-- About Me Page -->
         <section class="section section2" id="about">
             <div class="main-title">
                 <h2>About <span>me</span></h2>
@@ -211,6 +226,9 @@
                 </div>
             </div>
         </section>
+        <!-- End About Page -->
+
+        <!-- Projects Page -->
         <section class="section section3" id="projects">
             <div class="main-title">
                 <h2>My <span>Projects</span></h2>
@@ -288,7 +306,7 @@
             </div>
             <div class="project-card">
                 <div class="img-container">
-                    <a href="https://smoothie-lovers.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://smoothie-lovers.onrender.com" target="_blank" rel="noopener noreferrer">
                         <div class="image">
                             <img src="https://res.cloudinary.com/dfskzu7ui/image/upload/v1651087704/project3_b8b5eg.png" alt="Image of Ewa Kukla">
                         </div>
@@ -344,14 +362,14 @@
                         </ul>
                         <ul class="projects-links-icons">
                             <li><a href="https://github.com/Eva-Kuk/smoothie-lovers" class="icon" title="GitHub Link" aria-label="GitHub Link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://smoothie-lovers.herokuapp.com/" class="icon" title="External Link" aria-label="External Link" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                            <li><a href="https://smoothie-lovers.onrender.com" class="icon" title="External Link" aria-label="External Link" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="project-card alt margin-bottom">
                 <div class="img-container">
-                    <a href="https://unique-wings.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://unique-wings.onrender.com" target="_blank" rel="noopener noreferrer">
                         <div class="image">
                             <img src="https://res.cloudinary.com/dfskzu7ui/image/upload/v1651087721/project4_zumqnq.png" class="img-size" alt="Image of Unique Wings project">
                         </div>
@@ -422,13 +440,15 @@
                         </ul>
                         <ul class="projects-links-icons">
                             <li><a href="https://github.com/Eva-Kuk/unique-wings" class="icon" title="GitHub Link" aria-label="GitHub Link" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a></li>
-                            <li><a href="https://unique-wings.herokuapp.com/" class="icon" title="External Link" aria-label="External Link" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
+                            <li><a href="https://unique-wings.onrender.com" class="icon" title="External Link" aria-label="External Link" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- End Projects Page -->
 
+        <!-- Contact Page -->
         <section class="section section4 contact" id="contact">
             <div class="contact-container">
                 <div class="main-title">
@@ -442,7 +462,7 @@
                 </div>
                 <div class="contact-content-con">
                     <div class="left-contact">
-                        <form id="contact-form" method="POST" action="" autocomplete="on" aria-label="contact form" class="contact-form">
+                        <form id="contactForm" onsubmit="return sendMail(this);" autocomplete="on" aria-label="contact form" class="contact-form">
                             <div class="input-control position">
                                 <input type="text" name="name" id="name" placeholder="Your name" required>
                                 <input type="email" name="email" id="email" placeholder="Your Email" required>
@@ -468,7 +488,9 @@
                 </div>
             </div>
         </section>
+        <!-- End Contact Page -->
     </main>
+
     <!-- Navigation buttons -->
     <div class="icon-bar">
         <div class="nav-icon  control-1 active-btn" title="Home"  data-id="home">
@@ -484,11 +506,13 @@
             <i class="fas fa-envelope"></i>
         </div>
     </div>
+
     <!-- Dark & Light theme buttons -->
     <div class="theme-btn" title="Dark Light Mode">
         <i class="fas fa-adjust"></i>
     </div>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="contact-icons">
@@ -504,6 +528,7 @@
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/sendEmail.js"></script>
 </body>
 
 </html>
