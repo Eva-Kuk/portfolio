@@ -22,4 +22,5 @@ function sendMail(contactForm) {
             });
     // immediately stops reloading the page
     return false;
+    
 }
