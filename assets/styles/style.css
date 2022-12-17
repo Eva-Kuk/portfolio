@@ -863,7 +863,7 @@ footer {
   background-position: center center;
 }
 .project-card .project-card .margin-bottom {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem !important;
 }
 
 /*.about-container .left-about p {
