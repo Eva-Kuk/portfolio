@@ -212,10 +212,10 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   transition: var(--transition);
-  filter: grayscale(100%);
+  filter: grayscale(0%);
 }
 .header-content .left-header .image img:hover {
-  filter: grayscale(0);
+  filter: grayscale(1);
 }
 .header-content .right-header {
   display: flex;
