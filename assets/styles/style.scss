@@ -721,10 +721,10 @@ footer {
         position: relative;
         z-index: 0;
         height: 250px;
-        filter: grayscale(1);
+        filter: grayscale(0);
         transition: var(--transition);
         &:hover {
-            filter: grayscale(0);
+            filter: grayscale(1);
         }
     }
     .image {
@@ -737,7 +737,7 @@ footer {
         background-position: center center;
         transition: transform .2s;
         &:hover {
-            filter: grayscale(0);
+            filter: grayscale(1);
         }
         img {
             object-fit: cover;
