@@ -12,7 +12,9 @@ function sendMail(contactForm) {
             // Alert sent if email is successful
             function () {
                 //CREDIT: Stack Overflow, for the alert solution
+                
                 alert("Your email has been sent successfully, I will be in touch with you as soon as possible");
+                
                 window.location.reload(true);
             },
             // Alert sent if email fails

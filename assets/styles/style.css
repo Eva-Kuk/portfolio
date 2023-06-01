@@ -952,7 +952,7 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
   .timeline .container.left .content,
-.timeline .container.right .content {
+  .timeline .container.right .content {
     padding: 25px;
     border-radius: 0px 40px 0 40px;
   }
@@ -1133,7 +1133,7 @@ footer {
     padding: 2.5rem 5rem;
   }
   .section3,
-.section4 {
+  .section4 {
     padding: 0.5rem 2rem !important;
     margin-top: 7rem !important;
   }
@@ -1209,35 +1209,34 @@ footer {
     left: 0%;
   }
   .container.left::after,
-.container.right::after {
+  .container.right::after {
     left: 50px;
   }
   .container.left::before,
-.container.right::before {
+  .container.right::before {
     left: 100px;
   }
   .container.left .date,
-.container.right .date {
+  .container.right .date {
     display: none;
   }
   .container.left .date-mobile,
-.container.right .date-mobile {
+  .container.right .date-mobile {
     display: block !important;
     padding: 0.4rem 0.8rem;
     background-color: var(--grey-5);
     border-radius: 15px;
     font-size: 0.9rem;
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
   }
   .container.left .icon,
-.container.right .icon {
+  .container.right .icon {
     right: auto;
     left: 0;
   }
   .container.left .content,
-.container.right .content {
+  .container.right .content {
     padding: 25px 25px 25px 65px;
     border-radius: 500px 0 0 500px;
   }
