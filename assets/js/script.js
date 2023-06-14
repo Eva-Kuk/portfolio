@@ -1,7 +1,6 @@
 const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.icon-bar');
 const sectBtn = document.querySelectorAll('.nav-icon');
-//const sectBtn = document.querySelectorAll('.btn-projects');
 const allSections = document.querySelector('.main-content');
 
 
