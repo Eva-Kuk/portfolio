@@ -224,6 +224,7 @@ section {
   padding-right: 5rem;
 }
 .header-content .right-header .name {
+  margin-top: 1rem;
   font-size: 2rem;
 }
 .header-content .right-header .name span {
@@ -232,7 +233,7 @@ section {
 }
 .header-content .right-header p {
   margin: 1.5rem 0;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 .header-content .right-header .logo video {
   width: 150px;
@@ -1189,7 +1190,7 @@ footer {
   }
   .header-content .right-header .logo video {
     width: 110px !important;
-    margin-bottom: 1rem;
+    /*margin-bottom: 1rem;*/
   }
   .header-content .right-header p {
     letter-spacing: 1px;

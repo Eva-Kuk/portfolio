@@ -223,6 +223,7 @@ section {
         justify-content: center;
         padding-right: 5rem;
         .name {
+            margin-top: 1rem;
             font-size: 2rem;
             span {
                 color: var(--secondary);
@@ -231,7 +232,7 @@ section {
         }
         p {
             margin: 1.5rem 0;
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
         .logo video {
             width: 150px;
